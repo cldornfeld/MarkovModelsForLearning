@@ -8,11 +8,11 @@ import matplotlib.pyplot as plt
 import csv
 
 ###OPEN CSV AND GET MARKOV SEQUENCE
-csv_1 = csv.reader(open('/Users/catherinedornfeld/Desktop/CSCL_2017/SmallGroup/C5_C2_Sunfish_All.csv', 'rU'))
+csv_1 = csv.reader(open('dummyMarkovData.csv', 'rU'))
 myList1 = []
 next(csv_1) #skips header
 for row in csv_1:
-    myList1.append(row[1])
+    myList1.append(row[3]) #change number to reflect which column of data you want
 print myList1
 
 ###TRANSITION TABLES
@@ -35,10 +35,9 @@ for edge in mm:
 A=nx.nx_agraph.to_agraph(G)
 A.graph_attr.update(dpi="800")
 A.layout(prog="dot")
-A.draw('VidyaMap_discourse.png') #change file name
-#A.draw('/Users/catherinedornfeld/Desktop/All_Disc.svg') # -> need to change below, too
+A.draw('dummy_discourse.png') #change file name
 
-img=mpimg.imread('VidyaMap_discourse.png') #change file name
+img=mpimg.imread('dummy_discourse.png') #change file name to match
 imgplot = plt.imshow(img)
 plt.show()
 
