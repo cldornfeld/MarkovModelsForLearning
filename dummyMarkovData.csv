@@ -1,0 +1,15 @@
+Group,Speaker,Discourse,Code
+,,,Start
+A,1,What's that?,Question
+A,2,What do you mean?,Question
+A,1,That thing.,Clarification
+A,2,Oh! That's a pyramid.,Explanation
+A,1,Neat.,N/A
+,,,End
+,,,Start
+B,1,I think that we should make a circle.,Proposition
+B,2,Why do you think that?,Question
+B,3,I disagree,Disagreement
+B,1,I think the circle is best because it uses space well.,Justification
+B,3,But the square does too.,Disagreement
+,,,End
