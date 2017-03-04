@@ -6,11 +6,11 @@
 
 \f0\fs24 \cf0 Markov Instructions - Catherine Dornfeld\
 \
-For the discourse_Markov.py and logdata_Markov.py files, you will need to have your CSV prepped as a sequence of events. To demarcate separate sub-sequences, I add \'93Start\'94 and \'93End\'94 entries at the beginning and end of each sub-sequence. (For example, you might want to demarcate group discourse on separate days.)\
+For the discourse_Markov.py and logdata_Markov.py files, you will need to have your CSV prepared as a sequence of events. To demarcate separate sub-sequences, I add \'93Start\'94 and \'93End\'94 entries at the beginning and end of each sub-sequence. (For example, you might want to demarcate group discourse on separate days.)\
 \
-If you have a CSV with more than just the sequence (e.g., you also have group info, speaker into, etc.), you can pick a certain column. This is done in the line that says \'93myList1.append(row[1])\'94. You can replace 1 with the number of the column with your desired sequence. Remember that column reading goes from left to right and starts with 0. \
+If you have a CSV with more than just the sequence (e.g., you also have group info, speaker into, etc.), you can pick a certain column. This is done in the line that says \'93myList1.append(row[3])\'94. You can replace 3 with the number of the column with your desired sequence. Remember that column reading goes from left to right and starts with 0. \
 \
-NOTE 1: I use a Mac, and I noticed that I have to use the \'93Windows Comma Separated\'94 option in Save As\'85 to get anything to read correctly. I run this script in PyCharm with Anaconda. \
+NOTE 1: I use a Mac, and I noticed that I have to use the \'93Windows Comma Separated\'94 option in Save As\'85 to get anything to read correctly. I run this script in PyCharm Edu with Anaconda 2.7. \
 \
 NOTE 2: This is the long way to do this, but I like to open Excel and filter only the data that I want (e.g., discourse from a particular group or date). I then copy the filtered data into a separate CSV and label it based on my filters. While this approach isn\'92t the most efficient - you could just get a subset of your data in Python - it has built-in accuracy checks because I can see which CSV I opened and which one I wrote to. Since CSVs barely take up storage, I don\'92t mind doing this for a project.  \
 \
